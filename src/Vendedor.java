@@ -5,6 +5,16 @@ public class Vendedor {
     private Double valorSalario;
     private Double valorBonificacao;
 
+    public Vendedor(String nome, String documento, Endereco endereco, Double valorSalario) {
+        this.nome = nome;
+        this.documento = documento;
+        this.endereco = endereco;
+        this.valorSalario = valorSalario;
+    }
+
+    public Vendedor() {
+
+    }
 
     public String getNome() {
         return nome;
