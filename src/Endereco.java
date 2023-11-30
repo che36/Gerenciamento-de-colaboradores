@@ -3,6 +3,12 @@ public class Endereco {
     private String bairro;
     private String complemento;
 
+    public Endereco(String rua, String bairro, String complemento) {
+        this.rua = rua;
+        this.bairro = bairro;
+        this.complemento = complemento;
+    }
+
     public String getRua() {
         return rua;
     }
