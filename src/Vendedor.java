@@ -1,6 +1,7 @@
 public class Vendedor {
     private String nome;
     private String documento;
+    private Endereco endereco;
     private Double valorSalario;
     private Double valorBonificacao;
 
@@ -21,6 +22,14 @@ public class Vendedor {
         this.documento = documento;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
     public Double getValorSalario() {
         return valorSalario;
     }
@@ -37,3 +46,4 @@ public class Vendedor {
         this.valorBonificacao = valorBonificacao;
     }
 }
+
