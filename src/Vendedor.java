@@ -1,9 +1,6 @@
 public class Vendedor {
     private String nome;
     private String documento;
-    private String rua;
-    private String bairro;
-    private String complemento;
     private Double valorSalario;
     private Double valorBonificacao;
 
@@ -22,30 +19,6 @@ public class Vendedor {
 
     public void setDocumento(String documento) {
         this.documento = documento;
-    }
-
-    public String getRua() {
-        return rua;
-    }
-
-    public void setRua(String rua) {
-        this.rua = rua;
-    }
-
-    public String getBairro() {
-        return bairro;
-    }
-
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
-
-    public String getComplemento() {
-        return complemento;
-    }
-
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
     }
 
     public Double getValorSalario() {
