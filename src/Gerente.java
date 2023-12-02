@@ -1,4 +1,4 @@
-public class Gerente {
+public class Gerente implements CalculaBonificacao {
     private String nome;
     private String documento;
     private Endereco endereco;
@@ -14,6 +14,11 @@ public class Gerente {
         this.endereco = endereco;
         this.horasTrabalhadas = horasTrabalhadas;
         this.valorHora = valorHora;
+    }
+
+    @Override
+    public void calculaBonificacao(Double porcentagemBonificacao) {
+        this.valorBonificacao = this.valorRemuneracao * porcentagemBonificacao;
     }
 
     public Gerente() {
