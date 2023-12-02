@@ -6,4 +6,14 @@ public class OperadordeCaixa extends FuncionarioCLT {
 
     public OperadordeCaixa() {
     }
+
+    @Override
+    public String toString() {
+        return "OperadordeCaixa{" +
+                "nome='" + nome + '\'' +
+                ", documento='" + documento + '\'' +
+                ", endereco=" + endereco.getRua() +
+                ", valorSalario=" + valorSalario +
+                '}';
+    }
 }
