@@ -83,4 +83,17 @@ public class Gerente implements CalculaBonificacao {
     public void calculaRemuneracao() {
         this.valorRemuneracao = this.horasTrabalhadas * valorHora;
     }
+
+    @Override
+    public String toString() {
+        return "Gerente{" +
+                "nome='" + nome + '\'' +
+                ", documento='" + documento + '\'' +
+                ", endereco=" + endereco +
+                ", horasTrabalhadas=" + horasTrabalhadas +
+                ", valorHora=" + valorHora +
+                ", valorBonificacao=" + valorBonificacao +
+                ", valorRemuneracao=" + valorRemuneracao +
+                '}';
+    }
 }
