@@ -74,4 +74,8 @@ public class Gerente {
     public void setValorRemuneracao(Double valorRemuneracao) {
         this.valorRemuneracao = valorRemuneracao;
     }
+
+    public void calculaRemuneracao() {
+        this.valorRemuneracao = this.horasTrabalhadas * valorHora;
+    }
 }
