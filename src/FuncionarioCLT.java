@@ -1,8 +1,8 @@
 public abstract class FuncionarioCLT {
-    private String nome;
-    private String documento;
-    private Endereco endereco;
-    private Double valorSalario;
+    protected String nome;
+    protected String documento;
+    protected Endereco endereco;
+    protected Double valorSalario;
 
 
     public FuncionarioCLT(String nome, String documento, Endereco endereco, Double valorSalario) {
