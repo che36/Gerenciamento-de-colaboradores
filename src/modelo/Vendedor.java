@@ -1,3 +1,9 @@
+package modelo;
+
+import modelo.CalculaBonificacao;
+import modelo.Endereco;
+import modelo.FuncionarioCLT;
+
 public class Vendedor extends FuncionarioCLT implements CalculaBonificacao {
     private Double valorBonificacao;
 
@@ -24,10 +30,10 @@ public class Vendedor extends FuncionarioCLT implements CalculaBonificacao {
 
     @Override
     public String toString() {
-        return "Vendedor{" +
+        return "modelo.Vendedor{" +
                 "nome='" + nome + '\'' +
                 ", documento='" + documento + '\'' +
-                ", Endereco=" + endereco.getBairro() +
+                ", modelo.Endereco=" + endereco.getBairro() +
                 ", valorSalario=" + valorSalario +
                 "valorBonificacao=" + valorBonificacao +
                 '}';

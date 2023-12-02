@@ -1,3 +1,8 @@
+package modelo;
+
+import modelo.CalculaBonificacao;
+import modelo.Endereco;
+
 public class Gerente implements CalculaBonificacao {
     private String nome;
     private String documento;
@@ -86,7 +91,7 @@ public class Gerente implements CalculaBonificacao {
 
     @Override
     public String toString() {
-        return "Gerente{" +
+        return "modelo.Gerente{" +
                 "nome='" + nome + '\'' +
                 ", documento='" + documento + '\'' +
                 ", endereco=" + endereco.getRua() +

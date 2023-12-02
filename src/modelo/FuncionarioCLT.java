@@ -1,3 +1,5 @@
+package modelo;
+
 public abstract class FuncionarioCLT {
     protected String nome;
     protected String documento;
@@ -49,7 +51,7 @@ public abstract class FuncionarioCLT {
 
     @Override
     public String toString() {
-        return "FuncionarioCLT{" +
+        return "modelo.FuncionarioCLT{" +
                 "nome='" + nome + '\'' +
                 ", documento='" + documento + '\'' +
                 ", endereco=" + endereco +

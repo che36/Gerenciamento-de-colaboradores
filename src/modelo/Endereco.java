@@ -1,3 +1,5 @@
+package modelo;
+
 public class Endereco {
     private String rua;
     private String bairro;
@@ -35,7 +37,7 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "Endereco{" +
+        return "modelo.Endereco{" +
                 "rua='" + rua + '\'' +
                 ", bairro='" + bairro + '\'' +
                 ", complemento='" + complemento + '\'' +
