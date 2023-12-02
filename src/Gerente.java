@@ -89,7 +89,7 @@ public class Gerente implements CalculaBonificacao {
         return "Gerente{" +
                 "nome='" + nome + '\'' +
                 ", documento='" + documento + '\'' +
-                ", endereco=" + endereco +
+                ", endereco=" + endereco.getRua() +
                 ", horasTrabalhadas=" + horasTrabalhadas +
                 ", valorHora=" + valorHora +
                 ", valorBonificacao=" + valorBonificacao +
