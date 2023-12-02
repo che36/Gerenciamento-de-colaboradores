@@ -16,5 +16,16 @@ public class Vendedor extends FuncionarioCLT {
     public void setValorBonificacao(Double valorBonificacao) {
         this.valorBonificacao = valorBonificacao;
     }
+
+    @Override
+    public String toString() {
+        return "Vendedor{" +
+                "nome='" + nome + '\'' +
+                ", documento='" + documento + '\'' +
+                ", endereco=" + endereco +
+                ", valorSalario=" + valorSalario +
+                "valorBonificacao=" + valorBonificacao +
+                '}';
+    }
 }
 
