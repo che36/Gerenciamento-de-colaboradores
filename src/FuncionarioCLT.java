@@ -46,4 +46,14 @@ public abstract class FuncionarioCLT {
     public void setValorSalario(Double valorSalario) {
         this.valorSalario = valorSalario;
     }
+
+    @Override
+    public String toString() {
+        return "FuncionarioCLT{" +
+                "nome='" + nome + '\'' +
+                ", documento='" + documento + '\'' +
+                ", endereco=" + endereco +
+                ", valorSalario=" + valorSalario +
+                '}';
+    }
 }
