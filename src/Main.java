@@ -1,17 +1,25 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import modelo.Endereco;
+import modelo.Gerente;
+import modelo.OperadordeCaixa;
+import modelo.Vendedor;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Endereco endereco = new Endereco("Rua 1", "Bairro", "Complemento");
+        Vendedor vendedor = new Vendedor("César", "213465", endereco, 100d);
+        vendedor.calculaBonificacao(0.1);
+        OperadordeCaixa operadorDeCaixa = new OperadordeCaixa("Operador de Caixa", "123456", endereco, 123456d);
+        System.out.println(vendedor);
+        System.out.println(operadorDeCaixa);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Gerente gerente = new Gerente();
+        gerente.setNome("modelo.Gerente");
+        gerente.setDocumento("11.11.11");
+        gerente.setHorasTrabalhadas(40);
+        gerente.setValorHora(50d);
+        gerente.setEndereco(endereco);
+        gerente.calculaRemuneracao();
+        gerente.calculaBonificacao(0.2);
+        System.out.println(gerente);
     }
 }
